@@ -9,7 +9,7 @@ function save_options() {
 function restore_options() {
   // Use default value domain = 'sci-hub.tw'
   chrome.storage.sync.get({
-    domain: 'sci-hub.tw'
+    domain: 'https://mg.scihub.ltd/'
   }, function(items) {
     document.getElementById('domain').value = items.domain;
   });
